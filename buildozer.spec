@@ -9,7 +9,7 @@
 title = DnsLookUp
 
 # (str) Package name
-package.name = msa
+package.name = msa.dnslookup
 
 # (str) Package domain (needed for android/ios packaging)
 package.domain = org.msa
