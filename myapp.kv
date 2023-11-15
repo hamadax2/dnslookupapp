@@ -1,0 +1,41 @@
+BoxLayoutExample:
+    
+<BoxLayoutExample>:
+    orientation: 'vertical'
+    
+    Label:
+        text: 'IP DNS LOOKUP'
+        size_hint: .2,.2
+        pos_hint: {'center_x':0.5, "center_y":0.5}
+    BoxLayout1:
+        orientation: 'vertical'
+        #size_hint: (1,0.2)
+        Label:
+            text: 'Enter IP'
+            font_size:35
+            size_hint: 0.5,0.5
+            pos_hint: {"center_x": 0.5,"center_y":0.5}
+        TextInput:
+            id: ip
+            size_hint: None,None
+            width: "200dp"
+            height: "30dp"
+            pos_hint: {"center_x": 0.5,"center_y":0.5}
+        Button:
+            text: 'Search'
+            size_hint: 0.2,0.1
+            pos_hint: {"center_x": 0.5,"center_y":0.5}
+            on_press: root.search()
+        ScrollView:
+            do_scroll_x: False 
+            TextInput:
+                id: d
+                hint_text: "DNS LOOKUP BY HAMADA FROM SD TECH "
+                size_hint: 1,5
+        Label: 
+            text: 'Created By Hamada From SD TECH\nGithub : hamadax2\nTelegram: t.me/klinuxsd\nFacebook: king.hamada.sd'
+            pos_hint: {"center_x": 0.5,"center_y":0.5}
+        Image:
+            source : "images/sd.png"
+            size_hint: 0.2,0.2
+            pos_hint: {"center_x": 0.5,"center_y":0.5}
